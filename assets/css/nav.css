@@ -1,0 +1,46 @@
+.navbar {
+    background-color: rgb(59, 238, 178);
+    padding: 10px;
+}
+
+.navbar-ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+}
+
+.navbar-left {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+.navbar-right {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.navbar-link {
+    text-decoration: none;
+    color: black
+}
+
+.active {
+    color: orangered;
+}
+
+.navbar-logo {
+    width: 50px;
+}
+
+.navbar-contact-btn {
+    padding: 10px;
+    background-color: orangered;
+    color: white;
+    font-weight: 500;
+    font-size: 16px;
+    width: 100px;
+    border-radius: 10px;
+    margin-top: 20px;
+    text-decoration: none;
+}
