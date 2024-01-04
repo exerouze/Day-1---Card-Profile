@@ -13,7 +13,7 @@
 }
 
 .label-style {
-    color: white;
+    color: black;
     font-weight: bold;
     font-size: 15px;
 }
@@ -40,5 +40,5 @@ header h1{
     text-align: center;
     margin-top: 20px;
     font-size: 25px;
-    color: white;
+    color: black;
 }
