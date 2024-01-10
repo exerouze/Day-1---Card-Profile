@@ -30,8 +30,14 @@
           <li>
             <a href="contact.html" class="navbar-contact-btn"> Contact Me</a>
           </li>
+          <i class="bi bi-list" id="burger-button" onclick="openHamburger()"></i>
         </div>
       </ul>
+      <div id="burger-drop" class="burger-drop hidden">
+        <a class="burger-link burger-active" href="index.html">Home</a>
+        <a class="burger-link" href="project.html">My Project</a>
+        <a class="burger-link" href="contact.html">Contact Me</a>
+    </div>
     </nav>
     <main class="col-11">
       <div class="content-left col-6">
@@ -92,5 +98,7 @@
         </div>
       </div>
     </main>
+
+    <script src="assets/js/nav.js"></script>
   </body>
 </html>

@@ -10,7 +10,7 @@
 }
 
 .form-container {
-  width: 500px;
+  max-width: 500px;
   margin: 0 auto;
 }
 
@@ -25,7 +25,8 @@
 }
 
 .project-form input,
-.project-form textarea {
+.project-form textarea,
+.project-form select {
   width: 100%;
   font-size: 16px;
   font-weight: 400;
@@ -35,6 +36,7 @@
   background: #fff;
   border: 1px solid #c4c4c4;
   border-radius: 8px;
+  box-sizing: border-box; /* Ensure padding doesn't affect the width */
 }
 
 .project-form textarea {
@@ -52,12 +54,12 @@
   border: 1px solid #c4c4c4;
   border-radius: 8px;
   cursor: pointer;
+  box-sizing: border-box; /* Ensure padding doesn't affect the width */
 }
 
 .project-form form .project-image-group label p {
   font-size: 15px;
 }
-
 
 .project-form form .project-image-group label {
   cursor: pointer;
@@ -66,10 +68,8 @@
   justify-content: space-between;
 }
 
-
-
 .project-form .button-group {
-  text-align: right;
+  text-align: center; /* Change to center for smaller screens */
 }
 
 .project-form button {
@@ -81,6 +81,30 @@
   color: #fff;
   cursor: pointer;
 }
+
+/* Checkbox Styles for technologies-checkbox-group */
+.project-form form .technologies-checkbox-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 5px;
+}
+
+.project-form form .checkbox-group {
+  margin-right: 15px;
+  margin-bottom: 10px;
+}
+
+.project-form form .checkbox-group label {
+  display: flex;
+  cursor: pointer;
+}
+
+.project-form form .checkbox-group input[type="checkbox"] {
+  margin-right: 5px; /* Spacing between checkbox and label */
+}
+
+
 
 /* Project List Styles */
 .project-list {
@@ -106,9 +130,6 @@
 }
 
 .project-image img {
-  /* width: 100%;
-  height: 200px;
-   */
   width: 100%;
   height: 300px;
   border-radius: 8px;
@@ -128,10 +149,11 @@
 .btn-group {
   margin: auto;
   display: flex;
-  width: 250px;
+  width: 100%;
   margin-top: 10px;
   margin-bottom: 10px;
   gap: 20px;
+  justify-content: center;
 
 }
 
@@ -181,27 +203,6 @@
 }
 
 
-/* Checkbox Styles for technologies-checkbox-group */
-.project-form form .technologies-checkbox-group {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 15px;
-  margin-top: 5px;
-}
-
-.project-form form .checkbox-group {
-  margin-right: 15px;
-  margin-bottom: 10px;
-}
-
-.project-form form .checkbox-group label {
-  display: flex;
-  cursor: pointer;
-}
-
-.project-form form .checkbox-group input[type="checkbox"] {
-  margin-right: 5px; /* Spacing between checkbox and label */
-}
 
 
 /* Button Styles */
@@ -213,7 +214,7 @@
 .button-group button {
   padding: 10px 20px;
   font-size: 16px;
-  background: #ff4500;
+  background: #e62129;
   border-radius: 8px;
   border: none;
   color: #fff;
@@ -233,4 +234,22 @@
   margin-top: 10px;
   margin-right: 7px;
   font-size: 20px;
+}
+
+@media only screen and (max-width : 768px){
+  .date {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .project-list{
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    
+  }
+
+  .project-item{
+    width: 80%;
+  }
 }
