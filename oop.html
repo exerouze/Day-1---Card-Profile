@@ -9,6 +9,10 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css"
     />
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css"
+    rel="stylesheet"
+  />
     <link rel="stylesheet" href="assets/css/style.css" />
     <link rel="stylesheet" href="assets/css/nav.css" />
     <link rel="stylesheet" href="assets/css/oop.css">
@@ -29,7 +33,7 @@
               <a href="project.html" class="navbar-link"> My Project </a>
             </li>
             <li>
-              <a href="oop.html" class="navbar-link active"> OOP </a>
+              <a href="oop.html" class="navbar-link active"> Testimonials </a>
             </li>
           </div>
           <div class="navbar-right">
@@ -48,11 +52,40 @@
       </div>
       </nav>
 
-      <h1 style="text-align: center; margin-top: 20px;">Testimonials OOP</h1>
-
-    <div class="oopContainer" id="card">
-        
-    </div>
+      <main>
+        <section class="testimonials"></section>
+        <h1 style="text-align: center; margin-top: 20px;">Testimonials</h1>
+        <div class="rating-box">
+          <button class="rating-btn rating-btn-el" onclick="allTestimonials()">
+            All<i class="ri-star-fill"></i>
+          </button>
+  
+          <button class="rating-btn" onclick="filterTestimonials(1)">
+            1<i class="ri-star-fill"></i>
+          </button>
+  
+          <button class="rating-btn" onclick="filterTestimonials(2)">
+            2<i class="ri-star-fill"></i>
+          </button>
+  
+          <button class="rating-btn" onclick="filterTestimonials(3)">
+            3<i class="ri-star-fill"></i>
+          </button>
+  
+          <button class="rating-btn" onclick="filterTestimonials(4)">
+            4<i class="ri-star-fill"></i>
+          </button>
+  
+          <button class="rating-btn" onclick="filterTestimonials(5)">
+            5<i class="ri-star-fill"></i>
+          </button>
+        </div>
+  
+        <div class="oopContainer" id="card">
+  
+        </div>
+  
+      </main>
 
 
     <script src="assets/js/nav.js"></script>
